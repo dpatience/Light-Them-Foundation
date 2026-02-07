@@ -1,0 +1,483 @@
+/* Tooltip for Schools Reached */
+html{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.impact-box {
+    position: relative;
+}
+.schools-tooltip {
+    transition: opacity 0.2s, transform 0.2s;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(10px);
+}
+.impact-box:hover .schools-tooltip {
+    display: block !important;
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(-10px) translateX(-20px);
+
+}
+/* Fixed header */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 100;
+    background: #0b0b0b;
+    padding: 15px 6%;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+}
+.header-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+body {
+    padding-top: 80px;
+}
+
+/* Footer remains normal, not fixed */
+/* HERO as background */
+.hero-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 520px;
+    z-index: 0;
+    overflow: hidden;
+}
+.hero-bg img {
+    width: 100vw;
+    height: 520px;
+    object-fit: cover;
+    display: block;
+}
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 520px;
+    background: rgba(0,0,0,0.45);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 90px 6%;
+    z-index: 1;
+}
+
+.content-wrapper {
+    position: relative;
+    z-index: 2;
+    background: #fff;
+    margin-top: 360px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    border-radius: 8px;
+    padding: 40px 0 0 0;
+}
+/* PROGRAMS PAGE */
+.page-hero {
+    background: #fafafa;
+    padding: 60px 0 30px 0;
+    text-align: center;
+}
+.page-hero h1 {
+    font-size: 36px;
+    margin-bottom: 12px;
+}
+.page-hero p {
+    color: #555;
+    font-size: 18px;
+}
+
+.programs-section {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 60px 8%;
+}
+.program {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    background: #fff;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.07);
+    border-radius: 6px;
+    padding: 32px;
+}
+.program img {
+    width: 220px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+.program.reverse {
+    flex-direction: row-reverse;
+}
+.program h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+.program p {
+    color: #444;
+    font-size: 15px;
+}
+
+/* NEWS SECTION */
+.news-section {
+    background: #fafafa;
+    padding: 60px 8%;
+    text-align: center;
+}
+.news-section h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+.news-intro {
+    color: #666;
+    margin-bottom: 30px;
+}
+.news-grid {
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.news-card {
+    background: #fff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    border-radius: 6px;
+    padding: 18px;
+    width: 220px;
+    cursor: pointer;
+    transition: box-shadow 0.2s;
+    font-family: 'Times New Roman', Times, serif;
+}
+.news-card:hover {
+    box-shadow: 0 6px 24px rgba(0,0,0,0.13);
+}
+.news-card img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+.news-card h4 {
+    font-size: 16px;
+    color: #222;
+    margin: 0;
+}
+
+/* MODAL */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.5);
+    justify-content: center;
+    align-items: center;
+}
+.modal-content {
+    background: #fff;
+    padding: 32px;
+    border-radius: 8px;
+    max-width: 400px;
+    text-align: center;
+    position: relative;
+}
+.modal-content img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 16px;
+}
+.modal-content h3 {
+    margin: 10px 0 8px 0;
+    font-size: 20px;
+}
+.modal-content p {
+    color: #444;
+    font-size: 15px;
+}
+.close {
+    position: absolute;
+    top: 10px;
+    right: 18px;
+    font-size: 24px;
+    color: #888;
+    cursor: pointer;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    color: #222;
+    background: #d1c9c9;
+}
+
+/* HEADER */
+.header {
+    background: #0b0b0b;
+    padding: 15px 6%;
+}
+
+.header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo img {
+    height: 45px;
+}
+
+.logo-text strong {
+    color: #ffffff;
+    display: block;
+    font-size: 14px;
+}
+
+.logo-text span {
+    color: #e63946;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.nav a {
+    color: #ddd;
+    text-decoration: none;
+    margin: 0 12px;
+    font-size: 14px;
+}
+
+.nav a:hover {
+    color: #ffcc00;
+}
+
+.donate-btn {
+    background: #ffcc00;
+    color: #000;
+    padding: 10px 18px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+/* HERO */
+.hero {
+    position: relative;
+    height: 520px;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.45);
+    color: #fff;
+    padding: 90px 6%;
+}
+
+.hero-overlay h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.hero-overlay p {
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.hero-btn {
+    background: #ffcc00;
+    color: #000;
+    padding: 12px 26px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+/* WHY WE EXIST */
+.why {
+    padding: 80px 12%;
+    text-align: center;
+    background: #fafafa;
+}
+
+.why h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.why p {
+    font-size: 16px;
+    color: #3d3d3d;
+    text-align: left;
+    font-family: Times New Roman;
+}
+.why strong, .why b {
+    text-align: left;
+    font-family: Times New Roman;
+}
+/* FEATURE SECTION */
+.feature {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 80px 8%;
+}
+
+.feature-image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 4px;
+}
+
+.feature-text {
+    background: #fff;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.feature-text h3 {
+    font-size: 26px;
+    margin-bottom: 15px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.feature-text p {
+    color: #555;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.feature-text strong{
+    font-family: 'Times New Roman', Times, serif;
+}
+.feature-text li{
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom:16px;
+}
+/* FOOTER */
+.footer {
+    background: #0b0b0b;
+    color: #aaa;
+    text-align: center;
+    padding: 25px;
+    font-size: 14px;
+}
+/* IMPACT NUMBERS */
+.impact-numbers {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    padding: 80px 8%;
+    background: #111;
+    color: #fff;
+    gap: 40px;
+    text-align: center;
+}
+
+.impact-box span {
+    font-size: 48px;
+    font-weight: bold;
+    color: #f4c430;
+}
+
+.impact-box p {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+/* STORIES */
+.impact-stories {
+    padding: 80px 8%;
+}
+
+.story {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 60px;
+    align-items: center;
+}
+
+.story.reverse {
+    flex-direction: row-reverse;
+}
+
+.story img {
+    width: 45%;
+    border-radius: 6px;
+}
+
+.story h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* ACADEMIC */
+.academic-impact {
+    padding: 60px 12%;
+    background: #f5f5f5;
+}
+
+.academic-impact ul {
+    list-style: square;
+    padding-left: 20px;
+}
+
+.academic-impact li {
+    margin-bottom: 12px;
+}
+
+/* CTA */
+.impact-cta {
+    padding: 80px 10%;
+    text-align: center;
+    background: #000;
+    color: #fff;
+}
+
+.impact-cta a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 14px 30px;
+    background: #f4c430;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+}
