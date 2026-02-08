@@ -623,8 +623,12 @@ body {
 }
 
 @media (max-width: 480px) {
-    .header-inner, .content-wrapper {
+    .header-inner{
         padding: 0 1%;
+    } 
+    .content-wrapper {
+        padding: 0 1%;
+        margin-top: 180px;
     }
     .logo img {
         height: 32px;
@@ -655,8 +659,5 @@ body {
     .impact-cta a {
         padding: 10px 16px;
         font-size: 13px;
-    }
-    .why {
-        margin-top: 20px;
     }
 }
