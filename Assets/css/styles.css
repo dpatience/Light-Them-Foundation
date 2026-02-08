@@ -38,6 +38,44 @@ html{
     justify-content: space-between;
 }
 
+/* Hamburger menu styles for small screens */
+@media (max-width: 768px) {
+    .nav {
+        display: none;
+        flex-direction: column;
+        background: #222;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100vw;
+        padding: 18px 0;
+        z-index: 101;
+    }
+    .nav.show {
+        display: flex;
+    }
+    .menu-icon {
+        display: flex;
+        cursor: pointer;
+        font-size: 28px;
+        color: #ffcc00;
+        margin-right: 18px;
+    }
+    .header-inner {
+        position: relative;
+        display: flex;
+        flex-direction: row !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+    }
+}
+
+@media (min-width: 769px) {
+    .menu-icon {
+        display: none;
+    }
+}
+
 body {
     padding-top: 80px;
 }
@@ -83,6 +121,24 @@ body {
     box-shadow: 0 10px 30px rgba(0,0,0,0.08);
     border-radius: 8px;
     padding: 40px 0 0 0;
+}
+
+@media (max-width: 768px) {
+    .content-wrapper {
+        margin-top: 230px;
+    }
+    .page-hero{
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 500px) {
+    .content-wrapper {
+        margin-top: 230px;
+    }
+    .page-hero{
+        margin-top: 30px;
+    }
 }
 /* PROGRAMS PAGE */
 .page-hero {
@@ -335,7 +391,7 @@ body {
 
 /* WHY WE EXIST */
 .why {
-    padding: 80px 12%;
+    padding: 5px 12%;
     text-align: center;
     background: #fafafa;
 }
@@ -549,6 +605,7 @@ body {
     .hero-bg, .hero-bg img, .hero-overlay, .hero {
         height: 320px;
         min-height: 220px;
+        margin-top: 30px;
     }
     .hero-overlay, .hero-overlay h1 {
         padding: 40px 3%;
@@ -575,6 +632,7 @@ body {
     .hero-bg, .hero-bg img, .hero-overlay, .hero {
         height: 180px;
         min-height: 120px;
+        margin-top: 20px;
     }
     .hero-overlay h1 {
         font-size: 18px;

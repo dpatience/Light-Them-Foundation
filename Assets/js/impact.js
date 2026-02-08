@@ -50,4 +50,4 @@ function startCounting() {
 }
 
 window.addEventListener('scroll', startCounting);
-startCounting   ();
+startCounting();
