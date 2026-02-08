@@ -46,9 +46,10 @@ html{
         background: #222;
         position: absolute;
         top: 60px;
+        right: 120px;
         left: 0;
         width: 100vw;
-        padding: 18px 0;
+        padding: 18px 3%;
         z-index: 101;
     }
     .nav.show {
@@ -628,7 +629,7 @@ body {
     } 
     .content-wrapper {
         padding: 0 1%;
-        margin-top: 270px;
+        margin-top: 260px;
     }
     .logo img {
         height: 32px;
