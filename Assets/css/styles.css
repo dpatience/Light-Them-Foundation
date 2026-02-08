@@ -632,7 +632,7 @@ body {
     .hero-bg, .hero-bg img, .hero-overlay, .hero {
         height: 180px;
         min-height: 120px;
-        margin-top: 20px;
+        margin-top: 40px;
     }
     .hero-overlay h1 {
         font-size: 18px;
@@ -655,5 +655,8 @@ body {
     .impact-cta a {
         padding: 10px 16px;
         font-size: 13px;
+    }
+    .why {
+        margin-top: 20px;
     }
 }
