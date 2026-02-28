@@ -454,9 +454,23 @@ body {
 .footer {
     background: #0b0b0b;
     color: #aaa;
-    text-align: center;
-    padding: 25px;
+    padding: 25px 8%;
     font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer-socials {
+    display: flex;
+    gap: 16px;
+}
+.footer-socials a {
+    color: #aaa;
+    transition: color 0.2s;
+    display: flex;
+}
+.footer-socials a:hover {
+    color: #f4c430;
 }
 /* IMPACT NUMBERS */
 .impact-numbers {
