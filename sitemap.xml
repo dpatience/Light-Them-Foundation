@@ -1,39 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://lightthemfoundation.org/</loc>
     <lastmod>2026-08-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://lightthemfoundation.org/Assets/images/logo.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://lightthemfoundation.org/Assets/images/hero.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://lightthemfoundation.org/Assets/images/hero2.png</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://lightthemfoundation.org/about.html</loc>
     <lastmod>2026-08-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://lightthemfoundation.org/Assets/images/logo.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://lightthemfoundation.org/Assets/images/all.png</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://lightthemfoundation.org/programs.html</loc>
     <lastmod>2026-08-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://lightthemfoundation.org/Assets/images/1.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://lightthemfoundation.org/Assets/images/2.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://lightthemfoundation.org/Assets/images/3.png</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://lightthemfoundation.org/impact.html</loc>
     <lastmod>2026-08-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://lightthemfoundation.org/Assets/images/all.png</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://lightthemfoundation.org/contact.html</loc>
     <lastmod>2026-08-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://lightthemfoundation.org/Assets/images/logo.png</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://lightthemfoundation.org/Team.html</loc>
     <lastmod>2026-08-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://lightthemfoundation.org/Assets/images/logo.png</image:loc>
+    </image:image>
   </url>
 </urlset>
